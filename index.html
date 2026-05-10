@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <p class="heading">Rock Paper Scissors</p>
+
+    <div class="images-container">
+      <button onclick="ComputerMove('Rock')">
+        <img class="image" src="https://thumb.ac-illust.com/7c/7c1b48a67a3f555bb456ac718f3560a0_w.jpeg" alt="rock" />
+      </button>
+      <button onclick="ComputerMove('Paper')">
+        <img src="https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/paper.png" alt="paper"
+          class="image" />
+      </button>
+      <button onclick="ComputerMove('Scissors')">
+        <img src="https://i.pinimg.com/474x/67/eb/fd/67ebfd32e898b4ec3ae4e59ae33832c8.jpg" alt="scissors"
+          class="image" />
+      </button>
+    </div>
+    <button class="reset" id="reset" onclick="resetScore()">Reset</button>
+
+    <p class="text" id="text"></p>
+    <p class="text2" id="text2"></p>
+    <p class="result" id="result"></p>
+
+    <p class="scores" id="scores">Scores</p>
+  </div>
+</body>
+<script src="/script.js"></script>
+
+</html>
